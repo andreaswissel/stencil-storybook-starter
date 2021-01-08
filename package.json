@@ -2,14 +2,14 @@
   "name": "stencil-storybook-starter",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "es2015": "dist/esm/index.mjs",
-  "es2017": "dist/esm/index.mjs",
+  "main": "dist/index.cjs",
+  "module": "dist",
+  "es2015": "dist/esm/index",
+  "es2017": "dist/esm/index",
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
-  "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/stencil-storybook-starter/stencil-storybook-starter.js",
+  "collection:main": "dist/collection",
+  "unpkg": "dist/stencil-storybook-starter/stencil-storybook-starter.esm",
   "files": [
     "dist/",
     "loader/"
@@ -26,12 +26,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
-    "@stencil/core": "^1.8.8",
-    "@storybook/html": "^5.3.14",
-    "babel-loader": "^8.0.6"
+    "@stencil/core": "^2.3.0",
+    "@storybook/addon-knobs": "^6.1.11",
+    "@storybook/html": "^6.1.11",
+    "babel-loader": "^8.0.6",
+    "storybook": "^6.1.11"
   },
-  "license": "MIT",
-  "dependencies": {
-    "@storybook/addon-knobs": "^5.3.14"
-  }
+  "license": "MIT"
 }
